@@ -4,22 +4,22 @@
 %
 \subsection{Characteristic values of the oscilloscope}
 %
-The signal of the GMT can be seen on the oscilloscope screen (s. fig.1-5). fig.1 shows us the zero level $ U_{0} $ and
-the amplitude $ Û $:
+The signal of the GMT can be seen on the oscilloscope screen (s. fig.1-5). fig.1 shows us the zero level \(U_{0}\) and
+the amplitude \(\hat{U}\):
 %
-\begin{align*}
-    U_{0}&=\SI{24}{mV} \pm \SI{40}{mV} \\
-    \hat{U}&=\SI{1,56}{V} \pm \SI{0,04}{V}
-\end{align*}
+\begin{align}
+    U_{0}   &=  \SI{24}{mV} \pm \SI{40}{mV} \\
+    \hat{U} &=  \SI{1,56}{V} \pm \SI{0,04}{V}
+\end{align}
 %
-Further there can be read off the fall time $ t_{f} $ (fig.2), rise time $ t_{r} $ (fig.3), the pulse width $ t_{p} $
-(fig.4) and recovery time $ t_{re} $ (fig.5):
-\begin{align*}
-    t_{f}&=\SI{56}{\micro s} \pm \SI{20}{\micro s} \\
-    t_{r}&=\SI{228}{\micro s} \pm \SI{20}{\micro s} \\
-    t_{p}&=\SI{108}{\micro s} \pm \SI{20}{\micro s} \\
-    t_{re}&=\SI{288}{\micro s} \pm \SI{20}{\micro s}
-\end{align*}
+Further there can be read off the fall time \(t_{f}\) (fig.2), rise time \(t_{r}\) (fig.3), the pulse width \(t_{p}\)
+(fig.4) and recovery time \(t_{re}\) (fig.5):
+\begin{align}
+    t_{f}   &=  \SI{56}{\micro s} \pm \SI{20}{\micro s} \\
+    t_{r}   &=  \SI{228}{\micro s} \pm \SI{20}{\micro s} \\
+    t_{p}   &=  \SI{108}{\micro s} \pm \SI{20}{\micro s} \\
+    t_{re}  &=  \SI{288}{\micro s} \pm \SI{20}{\micro s}
+\end{align}
 -fig.1-\\
 -fig.2-\\
 -fig.3-\\
@@ -28,83 +28,87 @@ Further there can be read off the fall time $ t_{f} $ (fig.2), rise time $ t_{r}
 %
 \subsection{Characteristic curve of the GMT}
 %
-After determining the starting voltage $ U_{start} $ to $ U_{start}=\SI{328}{V} $, the characteristic curve has been
+After determining the starting voltage \(U_{start}\) to \(U_{start}=\SI{328}{V}\), the characteristic curve has been
 recorded by measuring the count rate over 100 seconds for each step-by-step-increased voltage. The calculated mean value
-of the count rate has been plotted versus the mean voltage by SciDAVis:\\
--fig.6-\\
-The relative slope in the plateau area is determined to $ m=(3,2\pm 2,8) \frac{\%}{\SI{100}{V}} $ by SciDAVis.\\
-The optimum working voltage $ U_{opt} $ is determined to $ U_{opt}=\SI{500}{V} $, since the maximum possible adjustable
-voltage of $ U_ {GMT}=\SI{600}{V} $ is still in the plateau area, which starts at $ U_{GMT}=\SI{340}{V} $.
+of the count rate has been plotted versus the mean voltage by SciDAVis:\par
+-fig.6-\par
+The relative slope in the plateau area is determined to \(m=(3,2 \pm 2,8) \frac{\%}{\SI{100}{V}}\) by SciDAVis.\par
+The optimum working voltage \(U_{opt}\) is determined to \(U_{opt}=\SI{500}{V}\), since the maximum possible adjustable
+voltage of \(U_{GMT}=\SI{600}{V}\) is still in the plateau area, which starts at \(U_{GMT}=\SI{340}{V}\).
 %
 \section{Angular dependency of the count rate}
-To examine the angular dependency of the count rate the angle of the tube has been varied from -45° to +45° in 15° steps.
-After measuring the count rate at the optimum working voltage of $ U_{opt}=\SI{500}{V} $ and calculating the mean value
-of the 12 count rates of each angle, the count rate was output versus angle by SciDAVis:\\
--fig.7-\\
+To examine the angular dependency of the count rate the angle of the tube has been varied from \SI[]{-45}[]{\degree} to
+\SI[]{+45}[]{\degree} in \SI[]{15}[]{\degree} steps. After measuring the count rate at the optimum working voltage of
+\(U_{opt}=\SI{500}{V}\) and calculating the mean value of the 12 count rates of each angle, the count rate was output
+versus angle by SciDAVis:\par
+-fig.7-\par
 %
 \section{Absorption characteristics of materials}
 %
 For investigating the absorption characteristics of materials the count rate has been measured 12 times at
-$ U_{opt}=\SI{500}{V} $ for different materials ($ \text{thickness}=\SI{2}{mm} $) in front of the tube:
+\(U_{opt}=\SI{500}{V}\) for different materials (\(\text{thickness}=\SI{2}{mm}\)) in front of the tube:
 %
-\begin{align*}
-    \text{no absorbing material: } n&=\SI{221}{cps} \pm \SI{11}{cps}\\
-    \text{Aluminum (Al): } n&=\SI{10}{cps} \pm \SI{4}{cps}\\
-    \text{Lead (Pb): } n&=\SI{7}{cps} \pm \SI{2}{cps}\\
-    \text{Tin (Sn): } n&=\SI{6}{cps} \pm \SI{2}{cps}\\
-    \text{Acrylic glass: } n&=\SI{26}{cps} \pm \SI{5}{cps}\\
-    \text{Cardboard: } n&=\SI{104}{cps} \pm \SI{8}{cps}
-\end{align*}
+\begin{align}
+    &\text{no absorbing material: }  &&n = \SI{221}{cps} \pm \SI{11}{cps}\\
+    &\text{Aluminum (Al): }          &&n = \SI{10}{cps} \pm \SI{4}{cps}\\
+    &\text{Lead (Pb): }              &&n = \SI{7}{cps} \pm \SI{2}{cps}\\
+    &\text{Tin (Sn): }               &&n = \SI{6}{cps} \pm \SI{2}{cps}\\
+    &\text{Acrylic glass: }          &&n = \SI{26}{cps} \pm \SI{5}{cps}\\
+    &\text{Cardboard: }              &&n = \SI{104}{cps} \pm \SI{8}{cps}
+\end{align}
+%
 The explanation for the different absorption of the different materials is the mass attenuation coefficient of the
-different materials. The mass attenuation coefficient is dependent on the material density ($ \rho $) and the attenuation
-coefficient ($ \micro $). Since the attenuation coefficient depends on the atomic number, the size of the atom does
-matter. The reason why there is happening an attenuation is because of the $\alpha$-, $\beta$- and $\gamma$-rays having
-an interaction with the material atoms. While the $\alpha$- and $\beta$-rays have a strong interaction with the material,
-$\gamma$-rays have a better penetration. The smaller the half-value layer of a material the weaker the penetration. With
-lead (Pb) and Tin (Sn) (and presumably Aluminum) almost all rays are absorbed (dependent on the ray energy). Acrylic
-glass can probably be traversed by the $\gamma$-rays. For the $\alpha$-rays the cardboard is sufficient to be absorbed.
+different materials. The mass attenuation coefficient is dependent on the material density \(\rho\) and the attenuation
+coefficient \( \mu \). Since the attenuation coefficient depends on the atomic number, the size of the atom does
+matter. The reason why there is happening an attenuation is because of the \(\alpha\)-, \(\beta\)- and \(\gamma\)-rays are
+interacting with the material atoms. While the \(\alpha\)- and \(\beta\)-rays have a strong interaction with the material,
+\(\gamma\)-rays have better penetration due to less likeliness to interact. The smaller the half-value layer of a
+material the weaker the penetration. With lead (\isotope[82]{Pb}) and Tin (\isotope[50]{Sn}) and presumably Aluminum
+(\isotope[13]{Al}) as well almost all rays are absorbed (dependent on the ray energy). Acrylic glass can probably be
+traversed by the \(\gamma\)-rays. Due to there size already a thin sheet of cardboard is sufficient to absorbed
+\(\alpha\)-ray particles almost entirely.
 %
 \section{Counting statistics}
 %
-For examining the statistics, 90 measurements were taken at a distance of $ \SI{1}{cm} $ and a voltage of
-$ U_{opt}=\SI{500}{V} $. The following values for mean $ \bar{n} $, variance $ \sigma^{2} $ and standard deviation
-$ \sigma $ were obtained:
+For examining the statistics, 90 measurements were taken at a distance of \( \SI{1}{cm} \) and a voltage of
+\( U_{opt}=\SI{500}{V} \). The following values for mean \( \bar{n} \), variance \( \sigma^{2} \) and standard deviation
+\( \sigma \) were obtained:
 %
-\begin{align*}
-    \bar{n}&=\SI{4327}{cps} \\
-    \sigma^{2}&=\SI{4168}{(cps)^{2}} \\
-    \sigma&=\SI{65}{cps}
-\end{align*}
-The measurement series results a scatter plot in SciDAVis:\\
--fig.8-\\
-A histogram made with SciDAVis shows the distribution of the measures:\\ 
--fig.9-\\
+\begin{align}
+    \bar{n}     &=  \SI{4327}{cps} \\
+    \sigma^{2}  &=  \SI{4168}{(cps)^{2}} \\
+    \sigma      &=  \SI{65}{cps}
+\end{align}
+The measurement series results a scatter plot in SciDAVis:\par
+-fig.8-\par
+A histogram made with SciDAVis shows the distribution of the measures:\par
+-fig.9-\par
 With radioactive decay it cannot be said which atom will decay when. Since it is a statistical process, the histogram
 can be described with a Poisson-distribution.
 %
 \section{Background radiation}
 %
 To investigate the background radiation the count rate was measured 90 times with no radiation source at a voltage of
-$ U_{opt}=\SI{500}{V} $. The measurement stats are:
+\( U_{opt}=\SI{500}{V} \). The measurement stats are:
 %
-\begin{align*}
-    \bar{n}&=\SI{3}{cps} \\
-    \sigma^{2}&=\SI{20}{(cps)^{2}} \\
-    \sigma&=\SI{4}{cps}
-\end{align*}
-The measurement number was plotted versus the count rate by SciDAVis:\\
--fig.10-\\
-The associated distribution histogram was drawn by SciDAVis:\\
--fig.11-\\
+\begin{align}
+    \bar{n}     &=  \SI{3}{cps} \\
+    \sigma^{2}  &=  \SI{20}{(cps)^{2}} \\
+    \sigma      &=  \SI{4}{cps}
+\end{align}
+The measurement number was plotted versus the count rate by SciDAVis:\par
+-fig.10-\par
+The associated distribution histogram was drawn by SciDAVis:\par
+-fig.11-\par
 This histogram can also be described by a Poisson-distribution for the same reason as histogram of the counting
 statistics.
 %
 \section{Natural radioactivity}
 %
 The radioactivity of a package Brazil nuts should have been determined by measuring the count rate. For that the GMT was
-put in a beaker filled with Brazil nuts for 900 seconds at $ U_{opt}=\SI{500}{V} $.\\
-The mean value of $ \bar{n}=\SI{3}{cps} $ indicates that the radioactivity of the Brazil nuts is very weak because it
+put in a beaker filled with Brazil nuts for 900 seconds at \( U_{opt}=\SI{500}{V} \).\par
+The mean value of \( \bar{n}=\SI{3}{cps} \) indicates that the radioactivity of the Brazil nuts is very weak because it
 has the same mean value as the background radiation. However, this does not have to mean that the Brazil nuts do not emit
 any radiation. Because the tube was very close to the nuts, the background radiation could not pass directly through the
-nuts, which implies that the rest of the radiation must have come from the Brazil nuts.\\
+nuts, which implies that the rest of the radiation must have come from the Brazil nuts.\par
 -fig.12-
