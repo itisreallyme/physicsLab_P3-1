@@ -13,25 +13,25 @@ the amplitude \(\hat{U}\):
 \end{align}
 %
 Further there can be read off the fall time \(t_{f}\) (fig.2), rise time \(t_{r}\) (fig.3), the pulse width \(t_{p}\)
-(fig.4) and recovery time \(t_{re}\) (fig.5):
+(fig.4) and recovery time \(t_{r}\) (fig.5):
 \begin{align}
     t_{f}   &=  \SI{56}{\micro s} \pm \SI{20}{\micro s} \\
     t_{r}   &=  \SI{228}{\micro s} \pm \SI{20}{\micro s} \\
     t_{p}   &=  \SI{108}{\micro s} \pm \SI{20}{\micro s} \\
     t_{re}  &=  \SI{288}{\micro s} \pm \SI{20}{\micro s}
 \end{align}
--fig.1-\\
--fig.2-\\
--fig.3-\\
--fig.4-\\
--fig.5-
 %
 \subsection{Characteristic curve of the GMT}
 %
 After determining the starting voltage \(U_{start}\) to \(U_{start}=\SI{328}{V}\), the characteristic curve has been
 recorded by measuring the count rate over 100 seconds for each step-by-step-increased voltage. The calculated mean value
 of the count rate has been plotted versus the mean voltage by SciDAVis:\par
--fig.6-\par
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=.8\textwidth]{scidavis/Fig.6_GMT-characteristics.jpg}
+    \caption[GMT characteristic]{Plot characterising the operating GMT.}
+    \label{fig:gmtCharacteristics}
+\end{figure}
 The relative slope in the plateau area is determined to \(m=(3,2 \pm 2,8) \frac{\%}{\SI{100}{V}}\) by SciDAVis.\par
 The optimum working voltage \(U_{opt}\) is determined to \(U_{opt}=\SI{500}{V}\), since the maximum possible adjustable
 voltage of \(U_{GMT}=\SI{600}{V}\) is still in the plateau area, which starts at \(U_{GMT}=\SI{340}{V}\).
@@ -41,7 +41,12 @@ To examine the angular dependency of the count rate the angle of the tube has be
 \SI[]{+45}[]{\degree} in \SI[]{15}[]{\degree} steps. After measuring the count rate at the optimum working voltage of
 \(U_{opt}=\SI{500}{V}\) and calculating the mean value of the 12 count rates of each angle, the count rate was output
 versus angle by SciDAVis:\par
--fig.7-\par
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=.8\textwidth]{scidavis/Fig.7_Angular dependency of the count rate.jpg}
+    \caption[Angular dependency of cps]{Angular dependency of the measured count rate.}
+    \label{fig:angularDepCPS}
+\end{figure}
 %
 \section{Absorption characteristics of materials}
 %
@@ -79,10 +84,20 @@ For examining the statistics, 90 measurements were taken at a distance of \( \SI
     \sigma^{2}  &=  \SI{4168}{(cps)^{2}} \\
     \sigma      &=  \SI{65}{cps}
 \end{align}
-The measurement series results a scatter plot in SciDAVis:\par
--fig.8-\par
-A histogram made with SciDAVis shows the distribution of the measures:\par
--fig.9-\par
+The measurement series results a scatter plot in SciDAVis:
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=.8\textwidth]{scidavis/Fig.8_Counting statistics.jpg}
+    \caption[Counting statistics]{Counting statistics.}
+    \label{fig:countingStatistics}
+\end{figure}
+A histogram made with SciDAVis shows the distribution of the measures:
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=.8\textwidth]{scidavis/Fig.9_Histogram (counting statistics).jpg}
+    \caption[Count. stats histogram]{Count. Stats histogram.}
+    \label{fig:countStatsHistogram}
+\end{figure}
 With radioactive decay it cannot be said which atom will decay when. Since it is a statistical process, the histogram
 can be described with a Poisson-distribution.
 %
@@ -96,10 +111,20 @@ To investigate the background radiation the count rate was measured 90 times wit
     \sigma^{2}  &=  \SI{20}{(cps)^{2}} \\
     \sigma      &=  \SI{4}{cps}
 \end{align}
-The measurement number was plotted versus the count rate by SciDAVis:\par
--fig.10-\par
-The associated distribution histogram was drawn by SciDAVis:\par
--fig.11-\par
+The measurement number was plotted versus the count rate by SciDAVis:
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=.8\textwidth]{scidavis/Fig.10_Background radiation.jpg}
+    \caption[Background radiation cps]{Measured counts caused by natural background radiation.}
+    \label{fig:backgroundRad}
+\end{figure}
+The associated distribution histogram was drawn by SciDAVis:
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=.8\textwidth]{scidavis/Fig.11_Histogram (background radiation).jpg}
+    \caption[Back Rad Hist]{Background Radiation Histogram.}
+    \label{fig:backgroundRadHistogram}
+\end{figure}
 This histogram can also be described by a Poisson-distribution for the same reason as histogram of the counting
 statistics.
 %
@@ -110,5 +135,10 @@ put in a beaker filled with Brazil nuts for 900 seconds at \( U_{opt}=\SI{500}{V
 The mean value of \( \bar{n}=\SI{3}{cps} \) indicates that the radioactivity of the Brazil nuts is very weak because it
 has the same mean value as the background radiation. However, this does not have to mean that the Brazil nuts do not emit
 any radiation. Because the tube was very close to the nuts, the background radiation could not pass directly through the
-nuts, which implies that the rest of the radiation must have come from the Brazil nuts.\par
--fig.12-
+nuts, which implies that the rest of the radiation must have come from the Brazil nuts.
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=.8\textwidth]{scidavis/Fig.12_Natural radioactivity.jpg}
+    \caption[Brazil Nutz]{Lots of Brazil Nuts.}
+    \label{fig:brazilNutz}
+\end{figure}
