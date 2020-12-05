@@ -8,58 +8,57 @@ The signal of the GMT can be seen on the oscilloscope screen (s. fig.1-5). fig.1
 the amplitude \(\hat{U}\):
 %
 \begin{align}
-    U_{0}   &=  \SI{24}{mV} \pm \SI{40}{mV} \\
-    \hat{U} &=  \SI{1,56}{V} \pm \SI{0,04}{V}
+U_{0}   &=  \SI{24}{mV} \pm \SI{40}{mV} \\
+\hat{U} &=  \SI{1,56}{V} \pm \SI{0,04}{V}
 \end{align}
 %
 Further there can be read off the fall time \(t_{f}\) (fig.2), rise time \(t_{r}\) (fig.3), the pulse width \(t_{p}\)
 (fig.4) and recovery time \(t_{r}\) (fig.5):
 \begin{align}
-    t_{f}   &=  \SI{56}{\micro s} \pm \SI{20}{\micro s} \\
-    t_{r}   &=  \SI{228}{\micro s} \pm \SI{20}{\micro s} \\
-    t_{p}   &=  \SI{108}{\micro s} \pm \SI{20}{\micro s} \\
-    t_{re}  &=  \SI{288}{\micro s} \pm \SI{20}{\micro s}
+t_{f}   &=  \SI{56}{\micro s} \pm \SI{20}{\micro s} \\
+t_{r}   &=  \SI{228}{\micro s} \pm \SI{20}{\micro s} \\
+t_{p}   &=  \SI{108}{\micro s} \pm \SI{20}{\micro s} \\
+t_{re}  &=  \SI{288}{\micro s} \pm \SI{20}{\micro s}
 \end{align}
 %
 \subsection{Characteristic curve of the GMT}
 %
 After determining the starting voltage \(U_{start}\) to \(U_{start}=\SI{328}{V}\), the characteristic curve has been
-recorded by measuring the count rate over 100 seconds for each step-by-step-increased voltage. The calculated mean value
+recorded. The calculated mean value
 of the count rate has been plotted versus the mean voltage by SciDAVis:\par
-\begin{figure}[h]
-    \centering
-    \includegraphics[width=.8\textwidth]{scidavis/Fig.6_GMT-characteristics.jpg}
-    \caption[GMT characteristic]{Plot characterising the operating GMT.}
-    \label{fig:gmtCharacteristics}
+\begin{figure}[H]
+ \centering
+ \includegraphics[width=.8\textwidth]{scidavis/Fig.6_GMT-characteristics.jpg}
+ \caption[GMT characteristic]{Plot characterising the operating GMT.}
+ \label{fig:gmtCharacteristics}
 \end{figure}
 The relative slope in the plateau area is determined to \(m=(3,2 \pm 2,8) \frac{\%}{\SI{100}{V}}\) by SciDAVis.\par
 The optimum working voltage \(U_{opt}\) is determined to \(U_{opt}=\SI{500}{V}\), since the maximum possible adjustable
 voltage of \(U_{GMT}=\SI{600}{V}\) is still in the plateau area, which starts at \(U_{GMT}=\SI{340}{V}\).
 %
 \section{Angular dependency of the count rate}
-To examine the angular dependency of the count rate the angle of the tube has been varied from \SI[]{-45}[]{\degree} to
-\SI[]{+45}[]{\degree} in \SI[]{15}[]{\degree} steps. After measuring the count rate at the optimum working voltage of
-\(U_{opt}=\SI{500}{V}\) and calculating the mean value of the 12 count rates of each angle, the count rate was output
+To examine the angular dependency the count rate was measured at the optimum working voltage of
+\(U_{opt}=\SI{500}{V}\) and the mean values of the 12 count rates of each angle were calculated. After that, the count rate was output
 versus angle by SciDAVis:\par
-\begin{figure}[h]
-    \centering
-    \includegraphics[width=.8\textwidth]{scidavis/Fig.7_Angular dependency of the count rate.jpg}
-    \caption[Angular dependency of cps]{Angular dependency of the measured count rate.}
-    \label{fig:angularDepCPS}
+\begin{figure}[H]
+ \centering
+ \includegraphics[width=.8\textwidth]{scidavis/Fig.7_Angular dependency of the count rate.jpg}
+ \caption[Angular dependency of cps]{Angular dependency of the measured count rate.}
+ \label{fig:angularDepCPS}
 \end{figure}
 %
 \section{Absorption characteristics of materials}
 %
-For investigating the absorption characteristics of materials the count rate has been measured 12 times at
-\(U_{opt}=\SI{500}{V}\) for different materials (\(\text{thickness}=\SI{2}{mm}\)) in front of the tube:
+For investigating the absorption characteristics of materials, the means of the count rates at
+\(U_{opt}=\SI{500}{V}\) for different materials were determined:
 %
 \begin{align}
-    &\text{no absorbing material: }  &&n = \SI{221}{cps} \pm \SI{11}{cps}\\
-    &\text{Aluminum (Al): }          &&n = \SI{10}{cps} \pm \SI{4}{cps}\\
-    &\text{Lead (Pb): }              &&n = \SI{7}{cps} \pm \SI{2}{cps}\\
-    &\text{Tin (Sn): }               &&n = \SI{6}{cps} \pm \SI{2}{cps}\\
-    &\text{Acrylic glass: }          &&n = \SI{26}{cps} \pm \SI{5}{cps}\\
-    &\text{Cardboard: }              &&n = \SI{104}{cps} \pm \SI{8}{cps}
+&\text{no absorbing material: }  &&n = \SI{221}{cps} \pm \SI{11}{cps}\\
+&\text{Aluminum (Al): }          &&n = \SI{10}{cps} \pm \SI{4}{cps}\\
+&\text{Lead (Pb): }              &&n = \SI{7}{cps} \pm \SI{2}{cps}\\
+&\text{Tin (Sn): }               &&n = \SI{6}{cps} \pm \SI{2}{cps}\\
+&\text{Acrylic glass: }          &&n = \SI{26}{cps} \pm \SI{5}{cps}\\
+&\text{Cardboard: }              &&n = \SI{104}{cps} \pm \SI{8}{cps}
 \end{align}
 %
 The explanation for the different absorption of the different materials is the mass attenuation coefficient of the
@@ -75,28 +74,27 @@ traversed by the \(\gamma\)-rays. Due to there size already a thin sheet of card
 %
 \section{Counting statistics}
 %
-For examining the statistics, 90 measurements were taken at a distance of \( \SI{1}{cm} \) and a voltage of
-\( U_{opt}=\SI{500}{V} \). The following values for mean \( \bar{n} \), variance \( \sigma^{2} \) and standard deviation
-\( \sigma \) were obtained:
+After 90 measurements we obtained the following statistical values for mean \( \bar{n} \), variance \( \sigma^{2} \) and standard deviation
+\( \sigma \):
 %
 \begin{align}
-    \bar{n}     &=  \SI{4327}{cps} \\
-    \sigma^{2}  &=  \SI{4168}{(cps)^{2}} \\
-    \sigma      &=  \SI{65}{cps}
+\bar{n}     &=  \SI{4327}{cps} \\
+\sigma^{2}  &=  \SI{4168}{(cps)^{2}} \\
+\sigma      &=  \SI{65}{cps}
 \end{align}
 The measurement series results a scatter plot in SciDAVis:
-\begin{figure}[h]
-    \centering
-    \includegraphics[width=.8\textwidth]{scidavis/Fig.8_Counting statistics.jpg}
-    \caption[Counting statistics]{Counting statistics.}
-    \label{fig:countingStatistics}
+\begin{figure}[H]
+ \centering
+ \includegraphics[width=.8\textwidth]{scidavis/Fig.8_Counting statistics.jpg}
+ \caption[Counting statistics]{Counting statistics.}
+ \label{fig:countingStatistics}
 \end{figure}
 A histogram made with SciDAVis shows the distribution of the measures:
-\begin{figure}[h]
-    \centering
-    \includegraphics[width=.8\textwidth]{scidavis/Fig.9_Histogram (counting statistics).jpg}
-    \caption[Count. stats histogram]{Count. Stats histogram.}
-    \label{fig:countStatsHistogram}
+\begin{figure}[H]
+ \centering
+ \includegraphics[width=.8\textwidth]{scidavis/Fig.9_Histogram (counting statistics).jpg}
+ \caption[Count. stats histogram]{Count. Stats histogram.}
+ \label{fig:countStatsHistogram}
 \end{figure}
 With radioactive decay it cannot be said which atom will decay when. Since it is a statistical process, the histogram
 can be described with a Poisson-distribution.
@@ -107,38 +105,36 @@ To investigate the background radiation the count rate was measured 90 times wit
 \( U_{opt}=\SI{500}{V} \). The measurement stats are:
 %
 \begin{align}
-    \bar{n}     &=  \SI{3}{cps} \\
-    \sigma^{2}  &=  \SI{20}{(cps)^{2}} \\
-    \sigma      &=  \SI{4}{cps}
+\bar{n}     &=  \SI{3}{cps} \\
+\sigma^{2}  &=  \SI{20}{(cps)^{2}} \\
+\sigma      &=  \SI{4}{cps}
 \end{align}
 The measurement number was plotted versus the count rate by SciDAVis:
-\begin{figure}[h]
-    \centering
-    \includegraphics[width=.8\textwidth]{scidavis/Fig.10_Background radiation.jpg}
-    \caption[Background radiation cps]{Measured counts caused by natural background radiation.}
-    \label{fig:backgroundRad}
+\begin{figure}[H]
+ \centering
+ \includegraphics[width=.8\textwidth]{scidavis/Fig.10_Background radiation.jpg}
+ \caption[Background radiation cps]{Measured counts caused by natural background radiation.}
+ \label{fig:backgroundRad}
 \end{figure}
 The associated distribution histogram was drawn by SciDAVis:
-\begin{figure}[h]
-    \centering
-    \includegraphics[width=.8\textwidth]{scidavis/Fig.11_Histogram (background radiation).jpg}
-    \caption[Back Rad Hist]{Background Radiation Histogram.}
-    \label{fig:backgroundRadHistogram}
+\begin{figure}[H]
+ \centering
+ \includegraphics[width=.8\textwidth]{scidavis/Fig.11_Histogram (background radiation).jpg}
+ \caption[Back Rad Hist]{Background Radiation Histogram.}
+ \label{fig:backgroundRadHistogram}
 \end{figure}
 This histogram can also be described by a Poisson-distribution for the same reason as histogram of the counting
 statistics.
 %
 \section{Natural radioactivity}
 %
-The radioactivity of a package Brazil nuts should have been determined by measuring the count rate. For that the GMT was
-put in a beaker filled with Brazil nuts for 900 seconds at \( U_{opt}=\SI{500}{V} \).\par
-The mean value of \( \bar{n}=\SI{3}{cps} \) indicates that the radioactivity of the Brazil nuts is very weak because it
+Last the radioactivity of a package Brazil nuts was determined. The mean value of \( \bar{n}=\SI{3}{cps} \) indicates that the radioactivity of the Brazil nuts is very weak because it
 has the same mean value as the background radiation. However, this does not have to mean that the Brazil nuts do not emit
 any radiation. Because the tube was very close to the nuts, the background radiation could not pass directly through the
 nuts, which implies that the rest of the radiation must have come from the Brazil nuts.
-\begin{figure}[h]
-    \centering
-    \includegraphics[width=.8\textwidth]{scidavis/Fig.12_Natural radioactivity.jpg}
-    \caption[Brazil Nutz]{Lots of Brazil Nuts.}
-    \label{fig:brazilNutz}
+\begin{figure}[H]
+ \centering
+ \includegraphics[width=.8\textwidth]{scidavis/Fig.12_Natural radioactivity.jpg}
+ \caption[Brazil Nutz]{Lots of Brazil Nuts.}
+ \label{fig:brazilNutz}
 \end{figure}
